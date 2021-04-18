@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Metric Fasterns List App</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
         <script src="js/app.js"></script>
     </head>
     <body>
@@ -13,14 +13,20 @@
             <div id="form-wrapper">
                 <div class="form-item">
                     <label for="name" class="primary">Name</label>
-                    <input type="text" id="name" required/>
+                    <input type="text" id="name" size="30" placeholder="M12x1.75x25, CAP HD, 50LG" required autofocus/>
                 </div>
 
                 <div class="form-item">
                     <label for="material" class="primary">Material</label>
-                    <input type="text" id="name" required/>
+                    <input type="text" id="material" size="30" placeholder="Stainless Steel" required autofocus/>
                 </div>
                 
+                <div class="form-item">
+                    <label for="grade" class="primary">Material Grade</label>
+                    <input type="text" id="grade" size="30" placeholder="A4-80" autofocus>
+                </div>
+
+
                 <div>
                     <label for="type" class="primary">Type</label>
                     <select id="type" required>
@@ -80,18 +86,18 @@
                 </div>
                     
                 <div>
-                    <label for="thread-length" class="primary">Thread Length</label>
-                    <input type="number" id="thread-length" required/>
+                    <label for="thLength" class="primary">Thread Length</label>
+                    <input type="number" id="thLength" required/>
                 </div>
 
                 <div>
-                    <label for="nominal-length" class="primary">Nominal Length</label>
-                    <input type="number" id="nominal-length">
+                    <label for="nominal" class="primary">Nominal Length</label>
+                    <input type="number" id="nominal">
                 </div>
 
                 <div class="form-item">
-                    <label for="head-type" class="primary">Head Type</label>
-                    <select id="head-type" required>
+                    <label for="style" class="primary">Head Type</label>
+                    <select id="style" required>
                         <option value="" disabled selected ></option>
                         <option value="hex">Hex</option>
                         <option value="csk">Countersunk</option>
@@ -103,9 +109,10 @@
             <input type="submit" value="save"/>
         </form>
 
-        <button id="delete-all">DELETE ALL</button>
+        
 
         <h1>Metric Fasteners List</h1>
         <ul id="fastener-list"></ul>
+        <button id="delete-btn">DELETE ALL</button>
     </body>
 </html>
