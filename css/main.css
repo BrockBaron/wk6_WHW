@@ -1,0 +1,47 @@
+body {
+font-family: Palatino;
+}
+
+#form-wrapper {
+width: 100%;
+display: flex;
+grid-template-columns: 40px 50px auto 50px 40px;
+flex-flow: row wrap;
+justify-content: space-around;
+flex-basis: fit-content;
+grid-template-columns: 100px 50px 100px;
+grid-template-rows: 80px auto 80px; 
+column-gap: 10px;
+row-gap: 15px;
+}
+
+.form-item {
+margin-right: 1.8rem;
+}
+
+label.primary {
+display: block;
+margin: 0.4em 0;
+}
+
+label::after {
+content: ":";
+}
+
+button, input[type="submit"] {
+margin-top: 1rem;
+}
+
+#fastener-list {
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+}
+
+.fastener-list-item {
+margin: 0.5rem 0.5rem;
+padding: 0.5rem 0.8rem;
+border: 1px solid #20437c;
+border-radius: 5%;
+background: #ddeaff;
+}

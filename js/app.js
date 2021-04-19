@@ -11,7 +11,6 @@ button.addEventListener('click', handleDeleteButtonClick)
 const handleNewItemFormSubmit = function(event){
     event.preventDefault();
     
-    const name = event.target.name.value;
     const material = event.target.material.value;
     const grade = event.target.grade.value;
     const type = event.target.type.value;
@@ -21,10 +20,11 @@ const handleNewItemFormSubmit = function(event){
     const thLength = event.target.thLength.value;
     const nominal = event.target.nominal.value;
     const style = event.target.style.value;
-    
+    // const name = event.target.name.value;
 
     const newFastener = document.createElement('li');
-    newFastener.textContent = `Name: ${name} 
+    newFastener.textContent = 
+    `Name: ${size}x${pitch}x${thLength}, ${style} HD, ${nominal}LG. 
     Material: ${material}
     Material Grade: ${grade} 
     Thread Type: ${type}

@@ -11,10 +11,7 @@
     <body>
         <form id="new-item-form" action="">
             <div id="form-wrapper">
-                <div class="form-item">
-                    <label for="name" class="primary">Name</label>
-                    <input type="text" id="name" size="30" placeholder="M12x1.75x25, CAP HD, 50LG" required autofocus/>
-                </div>
+                
 
                 <div class="form-item">
                     <label for="material" class="primary">Material</label>
@@ -99,14 +96,19 @@
                     <label for="style" class="primary">Head Type</label>
                     <select id="style" required>
                         <option value="" disabled selected ></option>
-                        <option value="hex">Hex</option>
-                        <option value="csk">Countersunk</option>
-                        <option value="cap">Cap</option>
-                        <option value="spline">Spline</option>
+                        <option value="HEX">HEX</option>
+                        <option value="CSK">CSK</option>
+                        <option value="CAP">CAP</option>
+                        <option value="SPL">SPL</option>
                     </select>
                 </div>
+                
+                <!-- <div class="form-item">
+                    <label for="name" class="primary">Name</label>
+                    <input type="text" id="name" size="30" placeholder="M12x1.75x25, CAP HD, 50LG" required autofocus/>
+                </div> -->
             </div>
-            <input type="submit" value="save"/>
+            <input type="submit" value="SUBMIT"/>
         </form>
 
         
